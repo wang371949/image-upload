@@ -22,8 +22,7 @@ app.engine('hbs', hbs({
     partialsDir: path.join(__dirname, 'views/partials')
 }))
 
-app.get('/', (req, res) => {
-    res.render('main');
-})
+//calling routes
+app.use('/', require('./server/router/router'))
 
 app.listen(3000, ()=>console.log(`Server has started on http://localhost:3000`))
