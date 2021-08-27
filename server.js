@@ -11,6 +11,9 @@ app.use(express.json())
 
 app.use(express.static(path.join(__dirname,'public')))
 
+//connect mongodb database
+require('./server/database/database')();
+
 
 //setup view engine
 
