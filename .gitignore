@@ -46,4 +46,5 @@ config.js
 
 #Image files
 
-.JPEG
+*.JPEG
+*.JPG
