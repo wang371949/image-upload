@@ -28,4 +28,4 @@ app.engine('hbs', hbs({
 //calling routes
 app.use('/', require('./server/router/router'))
 
-app.listen(3000, ()=>console.log(`Server has started on http://localhost:3000`))
+app.listen(process.env.PORT || 3000, ()=>console.log(`Server has started on http://localhost:3000`))
